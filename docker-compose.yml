@@ -6,6 +6,7 @@ services:
     build:
       context: .
       dockerfile: bytebot-desktop.Dockerfile
+      pull_policy: build
     # Pre-built image disabled for CPU compatibility
     # image: ghcr.io/bytebot-ai/bytebot-desktop:edge
     shm_size: "2g"
